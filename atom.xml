@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://falla.github.io/atom.xml" rel="self"/>
   <link href="http://falla.github.io/"/>
-  <updated>2013-06-23T15:59:45+08:00</updated>
+  <updated>2013-06-23T16:53:02+08:00</updated>
   <id>http://falla.github.io/</id>
   <author>
     <name><![CDATA[小蝴蝶]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[hello Octopress!]]></title>
-    <link href="http://falla.github.io/blog/2013/06/23/hellooctopress/"/>
+    <link href="http://falla.github.io/hellooctopress/"/>
     <updated>2013-06-23T15:05:00+08:00</updated>
-    <id>http://falla.github.io/blog/2013/06/23/hellooctopress</id>
+    <id>http://falla.github.io/hellooctopress</id>
     <content type="html"><![CDATA[<p>A blogging framework for hackers.<br/>
 win下装octopress的时候状况不断，换到linux下果然一路顺风就配置好了。<br/>
 珍爱生命远离windows。<br/>
