@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://falla.github.io/atom.xml" rel="self"/>
   <link href="http://falla.github.io/"/>
-  <updated>2013-06-23T14:59:00+08:00</updated>
+  <updated>2013-06-23T15:05:48+08:00</updated>
   <id>http://falla.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[helloOctopress]]></title>
+    <link href="http://falla.github.io/blog/2013/06/23/hellooctopress/"/>
+    <updated>2013-06-23T15:05:00+08:00</updated>
+    <id>http://falla.github.io/blog/2013/06/23/hellooctopress</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
