@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Codex | My Octopress Blog]]></title>
   <link href="http://falla.github.io/blog/categories/codex/atom.xml" rel="self"/>
   <link href="http://falla.github.io/"/>
-  <updated>2013-06-23T15:57:15+08:00</updated>
+  <updated>2013-06-23T15:59:45+08:00</updated>
   <id>http://falla.github.io/</id>
   <author>
     <name><![CDATA[小蝴蝶]]></name>
@@ -66,7 +66,7 @@ win下装octopress的时候状况不断，换到linux下果然一路顺风就配
 </span><span class='line'>
 </span><span class='line'>&lt;h1>Checks to see if there is a directory named &ldquo;.ssh&rdquo; in your user directory&lt;/h1>
 </span><span class='line'>
-</span><span class='line'>&lt;p>ssh-keygen -t rsa -C &ldquo;&lt;a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#121;&#x6f;&#117;&#x72;&#x5f;&#101;&#109;&#x61;&#x69;&#108;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;">&#x79;&#x6f;&#x75;&#x72;&#x5f;&#101;&#x6d;&#x61;&#105;&#x6c;&#x40;&#101;&#x78;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&lt;/a>&rdquo;&lt;/p>
+</span><span class='line'>&lt;p>ssh-keygen -t rsa -C &ldquo;&lt;a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x79;&#x6f;&#117;&#x72;&#x5f;&#101;&#109;&#x61;&#x69;&#108;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#109;">&#x79;&#111;&#x75;&#114;&#x5f;&#101;&#x6d;&#x61;&#x69;&#108;&#64;&#x65;&#120;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#111;&#109;&lt;/a>&rdquo;&lt;/p>
 </span><span class='line'>
 </span><span class='line'>&lt;h1>Creates a new ssh key, using the provided email as a label&lt;/h1>
 </span><span class='line'>
