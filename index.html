@@ -9,18 +9,10 @@
   <meta name="author" content="小蝴蝶">
 
   
-  <meta name="description" content="安装 1
-2
-3
-4
-5
-6
-7
-sudo apt-get install ruby1.9.3
-git clone git://github.com/imathis/octopress.git octopress
-cd octopress
-gem install bundler
-rbenv &hellip;">
+  <meta name="description" content="A blogging framework for hackers.
+win下装octopress的时候状况不断，换到linux下果然一路顺风就配置好了。
+珍爱生命远离windows。
+下面是记录： ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,69 +97,17 @@ rbenv &hellip;">
   </header>
 
 
-  <div class="entry-content"><h2>安装</h2>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install ruby1.9.3
-</span><span class='line'>git clone git://github.com/imathis/octopress.git octopress
-</span><span class='line'>cd octopress
-</span><span class='line'>gem install bundler
-</span><span class='line'>rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
-</span><span class='line'>bundle install  # If wait too long , use vpn
-</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>创建SSH Key</h2>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.ssh
-</span><span class='line'># Checks to see if there is a directory named ".ssh" in your user directory
-</span><span class='line'>ssh-keygen -t rsa -C "your_email@example.com"
-</span><span class='line'># Creates a new ssh key, using the provided email as a label
-</span><span class='line'>sudo apt-get install xclip
-</span><span class='line'># Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
-</span><span class='line'>xclip -sel clip &lt; ~/.ssh/id_rsa.pub
-</span><span class='line'># Copies the contents of the id_rsa.pub file to your clipboard</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>绑定Github pages</h2>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages
-</span><span class='line'>rake generate
-</span><span class='line'>rake deploy
-</span><span class='line'>git add .
-</span><span class='line'>git commit -m 'your message'
-</span><span class='line'>git push origin source
-</span><span class='line'>rake new_post["title"]
-</span><span class='line'>rake preview
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
+  <div class="entry-content"><p>A blogging framework for hackers.<br/>
+win下装octopress的时候状况不断，换到linux下果然一路顺风就配置好了。<br/>
+珍爱生命远离windows。<br/>
+下面是记录：</p>
 
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/06/23/hellooctopress/">Read on &rarr;</a>
+    </footer>
   
 
 

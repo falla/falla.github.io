@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://falla.github.io/atom.xml" rel="self"/>
   <link href="http://falla.github.io/"/>
-  <updated>2013-06-23T15:30:26+08:00</updated>
+  <updated>2013-06-23T15:57:15+08:00</updated>
   <id>http://falla.github.io/</id>
   <author>
     <name><![CDATA[小蝴蝶]]></name>
@@ -18,7 +18,15 @@
     <link href="http://falla.github.io/blog/2013/06/23/hellooctopress/"/>
     <updated>2013-06-23T15:05:00+08:00</updated>
     <id>http://falla.github.io/blog/2013/06/23/hellooctopress</id>
-    <content type="html"><![CDATA[<h2>安装</h2>
+    <content type="html"><![CDATA[<p>A blogging framework for hackers.<br/>
+win下装octopress的时候状况不断，换到linux下果然一路顺风就配置好了。<br/>
+珍爱生命远离windows。<br/>
+下面是记录：</p>
+
+<!--more-->
+
+
+<h2>安装</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -32,7 +40,7 @@
 </span><span class='line'>cd octopress
 </span><span class='line'>gem install bundler
 </span><span class='line'>rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
-</span><span class='line'>bundle install  # If wait too long , use vpn
+</span><span class='line'>bundle install  # 这个过程可能会卡住很久，开VPN就好。
 </span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
 
 
