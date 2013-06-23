@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://falla.github.io/atom.xml" rel="self"/>
   <link href="http://falla.github.io/"/>
-  <updated>2013-06-23T15:15:00+08:00</updated>
+  <updated>2013-06-23T15:30:26+08:00</updated>
   <id>http://falla.github.io/</id>
   <author>
     <name><![CDATA[小蝴蝶]]></name>
@@ -14,11 +14,71 @@
 
   
   <entry>
-    <title type="html"><![CDATA[helloOctopress]]></title>
+    <title type="html"><![CDATA[hello Octopress!]]></title>
     <link href="http://falla.github.io/blog/2013/06/23/hellooctopress/"/>
     <updated>2013-06-23T15:05:00+08:00</updated>
     <id>http://falla.github.io/blog/2013/06/23/hellooctopress</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<h2>安装</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install ruby1.9.3
+</span><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'>cd octopress
+</span><span class='line'>gem install bundler
+</span><span class='line'>rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+</span><span class='line'>bundle install  # If wait too long , use vpn
+</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>创建SSH Key</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.ssh
+</span><span class='line'># Checks to see if there is a directory named ".ssh" in your user directory
+</span><span class='line'>ssh-keygen -t rsa -C "your_email@example.com"
+</span><span class='line'># Creates a new ssh key, using the provided email as a label
+</span><span class='line'>sudo apt-get install xclip
+</span><span class='line'># Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+</span><span class='line'>xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+</span><span class='line'># Copies the contents of the id_rsa.pub file to your clipboard</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>绑定Github pages</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages
+</span><span class='line'>rake generate
+</span><span class='line'>rake deploy
+</span><span class='line'>git add .
+</span><span class='line'>git commit -m 'your message'
+</span><span class='line'>git push origin source
+</span><span class='line'>rake new_post["title"]
+</span><span class='line'>rake preview
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+
 ]]></content>
   </entry>
   

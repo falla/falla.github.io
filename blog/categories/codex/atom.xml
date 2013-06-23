@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Codex | My Octopress Blog]]></title>
+  <link href="http://falla.github.io/blog/categories/codex/atom.xml" rel="self"/>
+  <link href="http://falla.github.io/"/>
+  <updated>2013-06-23T15:30:26+08:00</updated>
+  <id>http://falla.github.io/</id>
+  <author>
+    <name><![CDATA[小蝴蝶]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[hello Octopress!]]></title>
+    <link href="http://falla.github.io/blog/2013/06/23/hellooctopress/"/>
+    <updated>2013-06-23T15:05:00+08:00</updated>
+    <id>http://falla.github.io/blog/2013/06/23/hellooctopress</id>
+    <content type="html"><![CDATA[<h2>安装</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install ruby1.9.3
+</span><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'>cd octopress
+</span><span class='line'>gem install bundler
+</span><span class='line'>rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+</span><span class='line'>bundle install  # If wait too long , use vpn
+</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>创建SSH Key</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.ssh&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Checks to see if there is a directory named &ldquo;.ssh&rdquo; in your user directory&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>ssh-keygen -t rsa -C &ldquo;&lt;a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#121;&#111;&#x75;&#x72;&#x5f;&#x65;&#x6d;&#x61;&#x69;&#108;&#64;&#x65;&#x78;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;">&#121;&#111;&#117;&#x72;&#x5f;&#x65;&#x6d;&#97;&#105;&#x6c;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#109;&lt;/a>&rdquo;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Creates a new ssh key, using the provided email as a label&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>sudo apt-get install xclip&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Downloads and installs xclip. If you don&rsquo;t have &lt;code>apt-get&lt;/code>, you might need to use another installer (like &lt;code>yum&lt;/code>)&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>xclip -sel clip &lt; ~/.ssh/id_rsa.pub&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Copies the contents of the id_rsa.pub file to your clipboard&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>绑定Github pages</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages
+</span><span class='line'>rake generate
+</span><span class='line'>rake deploy
+</span><span class='line'>git add .
+</span><span class='line'>git commit -m &lsquo;your message&rsquo;
+</span><span class='line'>git push origin source
+</span><span class='line'>rake new_post[&ldquo;title&rdquo;]
+</span><span class='line'>rake preview
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>
