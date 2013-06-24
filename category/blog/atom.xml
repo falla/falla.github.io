@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | Falla's Octopress]]></title>
+  <link href="http://falla.github.io/category/blog/atom.xml" rel="self"/>
+  <link href="http://falla.github.io/"/>
+  <updated>2013-06-24T12:38:04+08:00</updated>
+  <id>http://falla.github.io/</id>
+  <author>
+    <name><![CDATA[小蝴蝶]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Happy Birthday Boris]]></title>
+    <link href="http://falla.github.io/happybirth-boris/"/>
+    <updated>2013-06-24T12:21:00+08:00</updated>
+    <id>http://falla.github.io/happybirth-boris</id>
+    <content type="html"><![CDATA[<script type="text/javascript">
+  
+ 
+  
+        var a = "HappyBirthday Bao" ;
+        var b = 0 ; 
+setTimeout("type()", 1000) ;
+
+        function type() { 
+            document.getElementById("hbbao").innerHTML  = a.substring(0, b);
+            if (b == a.length) { stop;} 
+            else{ b++ ;}
+            setTimeout("type()", 300) ;
+        }
+ 
+</script>
+
+
+<p>
+VPS是买不起了, 只能送你一段代码了~生快!<br/>
+  <pre><br>           iiiiiiiiiii<br>          |~~~~~~~~~~~|<br>        &#95;&#95;|_________&#95;&#95;|&#95;&#95;<br>       |^^^^^^^^^^^^^^^^^|<br>       |<span id="hbbao">                 </span>|<br>       |                 |  <br>       ~~~~~~~~~~~~~~~~~~~ <br> </pre></p>
+]]></content>
+  </entry>
+  
+</feed>
