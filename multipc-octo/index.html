@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>test - Falla's Octopress</title>
+  <title>在多台电脑上同步octopress - Falla's Octopress</title>
   <meta name="author" content="小蝴蝶">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="今天从Ubuntu搬octopress到win, 用git把文件pull下来的时候发现, 有几个文件夹没有拉下来却还是显示已经up to date, 然后我也懒得深究了, 就直接把ubuntu的octopress文件夹打包搬到了win. 重新部署 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://falla.github.io/test">
+  <link rel="canonical" href="http://falla.github.io/multipc-octo">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Falla's Octopress" type="application/atom+xml">
@@ -68,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Test</h1>
+      <h1 class="entry-title">在多台电脑上同步octopress</h1>
     
     
       <p class="meta">
@@ -91,7 +90,45 @@
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><p>今天从Ubuntu搬octopress到win, 用git把文件pull下来的时候发现, 有几个文件夹没有拉下来却还是显示已经up to date, <br/>
+然后我也懒得深究了, 就直接把ubuntu的octopress文件夹打包搬到了win.</p>
+
+<h3>重新部署</h3>
+
+<p>然后卸载了原本在win下无法部署octopress的罪魁祸首Ruby200, 改装了ruby193, 其次是装devkit, 装gem依赖,</p>
+
+<!--more-->
+
+
+<h3>jekyll编码</h3>
+
+<p>然后接下来这一步是在ubuntu下无需进行的, 那就是修改jekyll的编码设置:<br/>
+文件路径为.\ruby193\lib\ruby\gems\1.9.1\gems\jekyll-0.12.0\llib\jekyll\convertible.rb<br/>
+将28行的<pre>self.content = File.read(File.join(base, name))</pre>
+改成</p>
+
+<pre>self.content = File.read(File.join(base, name),:encoding=>"UTF-8")</pre>
+
+
+<p>不然会报什么什么in GBK的错误, 当时忘记录了.</p>
+
+<h3>LF和CRLF</h3>
+
+<p>然后就可以直接写文章了, 用github的git shell而不是Git自带的bash发布, 不然就要重新配置权限</p>
+
+<pre>git config -global user.email "user@example.com"
+git config -global user.name "username"</pre>
+
+
+<p>
+在rake deploy的时候会出现如下警告:</p>
+
+<pre>warning: LF will be replaced by CRLF</pre>
+
+
+<p>
+原因是win和linux换行字符不同:win下为 CRLF; 本来在ubuntu下git生成的rails文件中的换行符为LF, 然后在win下执行就会出现这样的提示<br/>
+不过没有其他影响, 可以正常更新博客, 所以我就忽略了它.</p>
 </div>
 
 
@@ -116,6 +153,12 @@
 
 <time datetime="2013-06-24T13:34:00+08:00" pubdate data-updated="true">Jun 24<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/category/codex/'>codex</a>
+  
+</span>
 
 
     </p>
@@ -153,7 +196,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/test/">Test</a>
+        <a href="/multipc-octo/">在多台电脑上同步octopress</a>
       </li>
     
       <li class="post">
@@ -199,8 +242,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://falla.github.io/test/';
-        var disqus_url = 'http://falla.github.io/test/';
+        var disqus_identifier = 'http://falla.github.io/multipc-octo/';
+        var disqus_url = 'http://falla.github.io/multipc-octo/';
         var disqus_script = 'embed.js';
       
     (function () {
