@@ -9,15 +9,19 @@
         <lastmod>2013-06-24T12:37:51+08:00</lastmod>
     </url>
     <url>
-        <loc>http://falla.github.io/robots.txt</loc>
-        <lastmod>2013-06-23T14:47:27+08:00</lastmod>
+        <loc>http://falla.github.io/test/</loc>
+        <lastmod>2013-06-24T13:34:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://falla.github.io/blog/archives/</loc>
-        <lastmod>2013-06-24T12:37:51+08:00</lastmod>
+        <lastmod>2013-06-24T13:34:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://falla.github.io/</loc>
-        <lastmod>2013-06-24T12:37:51+08:00</lastmod>
+        <lastmod>2013-06-24T13:34:06+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://falla.github.io/robots.txt</loc>
+        <lastmod>2013-06-23T14:47:27+08:00</lastmod>
     </url>
 </urlset>
