@@ -4,7 +4,7 @@
   <title><![CDATA[Falla's Octopress]]></title>
   <link href="http://falla.github.io/atom.xml" rel="self"/>
   <link href="http://falla.github.io/"/>
-  <updated>2013-06-24T14:35:44+08:00</updated>
+  <updated>2013-06-27T18:08:08+08:00</updated>
   <id>http://falla.github.io/</id>
   <author>
     <name><![CDATA[小蝴蝶]]></name>
@@ -18,7 +18,7 @@
     <link href="http://falla.github.io/multipc-octo/"/>
     <updated>2013-06-24T13:34:00+08:00</updated>
     <id>http://falla.github.io/multipc-octo</id>
-    <content type="html"><![CDATA[<p>今天从Ubuntu搬octopress到win, 用git把文件pull下来的时候发现, 有几个文件夹没有拉下来却还是显示已经up to date, <br/>
+    <content type="html"><![CDATA[<p>今天从Ubuntu搬octopress到win, 用git把文件pull下来的时候发现, 有几个文件夹没有拉下来却还是显示已经up to date, 想起来是之前没push上去<br/>
 然后我也懒得深究了, 就直接把ubuntu的octopress文件夹打包搬到了win.</p>
 
 <h3>重新部署</h3>
